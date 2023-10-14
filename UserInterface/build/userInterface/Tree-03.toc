@@ -1,0 +1,5 @@
+('C:\\Automação\\Portal_Cliente_PF\\UserInterface\\build\\userInterface\\xlsxwriter-3.0.1-py3.7.egg',
+ None,
+ {'*.cp37-win_amd64.pyd', '*.pyd', '*.pyw', '*.pyc', '*.py', 'EGG-INFO'},
+ 'DATA',
+ [])

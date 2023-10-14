@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.9.7 on win32)" generated="20211019 09:41:10.998" rpa="false" schemaversion="2">
+<suite id="s1" name="TestCases" source="C:\Automação\Portal_Cliente_PF\TestCases">
+<suite id="s1-s1" name="Previdencia" source="C:\Automação\Portal_Cliente_PF\TestCases\Previdencia">
+<suite id="s1-s1-s1" name="Previdencia" source="C:\Automação\Portal_Cliente_PF\TestCases\Previdencia\previdencia.robot">
+<test id="s1-s1-s1-t1" name="Validar a funcionalidade do botão Ocultar Dados (Olho) do produto PREV localizado em Composição da Reserva">
+<kw name="Realizar login e maximizar a janela" library="resourceGeneral" type="SETUP">
+<arg>Previdencia</arg>
+<kw name="Read Element Locator" library="resourceGeneral">
+<var>${LinkClientePF}</var>
+<arg>paginas[0].homeNaoLogado[0].linkClientePessoaFisica</arg>
+<kw name="Read Locators From Json" library="locators">
+<var>${result}</var>
+<arg>${JsonPath}</arg>
+<msg timestamp="20211019 09:41:11.639" level="INFO">${result} = //nav/a[1]</msg>
+<status status="PASS" starttime="20211019 09:41:11.638" endtime="20211019 09:41:11.639"/>
+</kw>
+<msg timestamp="20211019 09:41:11.640" level="INFO">${LinkClientePF} = //nav/a[1]</msg>
+<status status="PASS" starttime="20211019 09:41:11.637" endtime="20211019 09:41:11.640"/>
+</kw>
+<kw name="Read Element Locator" library="resourceGeneral">
+<var>${campoCPF}</var>
+<arg>paginas[0].loginCliente[0].campoDeTextoSeuCPF</arg>
+<kw name="Read Locators From Json" library="locators">
+<var>${result}</var>
+<arg>${JsonPath}</arg>
+<msg timestamp="20211019 09:41:11.642" level="INFO">${result} = loginInput</msg>
+<status status="PASS" starttime="20211019 09:41:11.641" endtime="20211019 09:41:11.642"/>
+</kw>
+<msg timestamp="20211019 09:41:11.642" level="INFO">${campoCPF} = loginInput</msg>
+<status status="PASS" starttime="20211019 09:41:11.640" endtime="20211019 09:41:11.642"/>
+</kw>
+<kw name="Read Element Locator" library="resourceGeneral">
+<var>${campoSenha}</var>
+<arg>paginas[0].loginCliente[1].campoDeTextoSuaSenha</arg>
+<kw name="Read Locators From Json" library="locators">
+<var>${result}</var>
+<arg>${JsonPath}</arg>
+<msg timestamp="20211019 09:41:11.643" level="INFO">${result} = senhaInput</msg>
+<status status="PASS" starttime="20211019 09:41:11.642" endtime="20211019 09:41:11.643"/>
+</kw>
+<msg timestamp="20211019 09:41:11.643" level="INFO">${campoSenha} = senhaInput</msg>
+<status status="PASS" starttime="20211019 09:41:11.642" endtime="20211019 09:41:11.643"/>
+</kw>
+<kw name="Read Element Locator" library="resourceGeneral">
+<var>${botaoEntrar}</var>
+<arg>paginas[0].loginCliente[2].botaoEntrar</arg>
+<kw name="Read Locators From Json" library="locators">
+<var>${result}</var>
+<arg>${JsonPath}</arg>
+<msg timestamp="20211019 09:41:11.645" level="INFO">${result} = //button[@type='submit']</msg>
+<status status="PASS" starttime="20211019 09:41:11.644" endtime="20211019 09:41:11.645"/>
+</kw>
+<msg timestamp="20211019 09:41:11.645" level="INFO">${botaoEntrar} = //button[@type='submit']</msg>
+<status status="PASS" starttime="20211019 09:41:11.643" endtime="20211019 09:41:11.645"/>
+</kw>
+<kw name="Get Username And Password" library="testdata">
+<var>${CPFeSenha}</var>
+<arg>${Segmento}</arg>
+<msg timestamp="20211019 09:41:11.645" level="INFO">${CPFeSenha} = ['15723466801', 'Teste123*']</msg>
+<status status="PASS" starttime="20211019 09:41:11.645" endtime="20211019 09:41:11.645"/>
+</kw>
+<kw name="Get Url" library="testdata">
+<var>${URL}</var>
+<msg timestamp="20211019 09:41:11.646" level="INFO">${URL} = https://homologacao-www.segurosunimed.com.br/</msg>
+<status status="PASS" starttime="20211019 09:41:11.645" endtime="20211019 09:41:11.646"/>
+</kw>
+<kw name="Set Selenium Timeout" library="SeleniumLibrary">
+<arg>45</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" starttime="20211019 09:41:11.646" endtime="20211019 09:41:11.646"/>
+</kw>
+<kw name="Get Web Driver" library="webdrivers">
+<var>${WebBrowser}</var>
+<arg>Chrome</arg>
+<msg timestamp="20211019 09:41:11.646" level="INFO">${WebBrowser} = C:/Automação/Portal_Cliente_PF/Webdrivers/chromedriver.exe</msg>
+<status status="PASS" starttime="20211019 09:41:11.646" endtime="20211019 09:41:11.646"/>
+</kw>
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>Chrome</arg>
+<arg>executable_path=${WebBrowser}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20211019 09:41:11.646" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20211019 09:41:11.646" endtime="20211019 09:41:13.727"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20211019 09:41:13.728" level="INFO">Opening url 'https://homologacao-www.segurosunimed.com.br/'</msg>
+<status status="PASS" starttime="20211019 09:41:13.727" endtime="20211019 09:41:34.176"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211019 09:41:34.176" endtime="20211019 09:41:34.307"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${LinkClientePF}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211019 09:41:34.307" endtime="20211019 09:41:34.352"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${LinkClientePF}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20211019 09:41:34.353" level="INFO">Clicking link '//nav/a[1]'.</msg>
+<status status="PASS" starttime="20211019 09:41:34.353" endtime="20211019 09:41:45.502"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${campoCPF}</arg>
+<arg>${CPFeSenha[0]}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211019 09:41:45.503" level="INFO">Typing text '15723466801' into text field 'loginInput'.</msg>
+<status status="PASS" starttime="20211019 09:41:45.502" endtime="20211019 09:41:45.730"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${campoSenha}</arg>
+<arg>${CPFeSenha[1]}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211019 09:41:45.731" level="INFO">Typing text 'Teste123*' into text field 'senhaInput'.</msg>
+<status status="PASS" starttime="20211019 09:41:45.730" endtime="20211019 09:41:45.877"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${botaoEntrar}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211019 09:41:45.878" level="INFO">Clicking button '//button[@type='submit']'.</msg>
+<status status="PASS" starttime="20211019 09:41:45.877" endtime="20211019 09:41:46.016"/>
+</kw>
+<status status="PASS" starttime="20211019 09:41:11.637" endtime="20211019 09:41:46.016"/>
+</kw>
+<kw name="Dado que eu realize login com um segurado do segmento Previdencia" library="resourcePrevidencia">
+<var>${CTID}</var>
+<arg>CT-149</arg>
+<doc>Palavra chave utilizada em todos os casos de teste deste cenario</doc>
+<kw name="Create Folder" library="folders">
+<arg>Previdencia</arg>
+<arg>${CTID}</arg>
+<msg timestamp="20211019 09:41:46.018" level="INFO">Pasta já criada</msg>
+<status status="PASS" starttime="20211019 09:41:46.017" endtime="20211019 09:41:46.018"/>
+</kw>
+<kw name="Return Folder Path" library="folders">
+<var>${FolderPath}</var>
+<arg>Previdencia</arg>
+<arg>${CTID}</arg>
+<msg timestamp="20211019 09:41:46.018" level="INFO">${FolderPath} = C:/Users/T02285/Pictures/Evidências automação//Previdencia//CT-149</msg>
+<status status="PASS" starttime="20211019 09:41:46.018" endtime="20211019 09:41:46.019"/>
+</kw>
+<kw name="Read Element Locator" library="resourceGeneral">
+<var>${DivCardHeaderRE}</var>
+<arg>paginas[0].homeLogado[0].meusProdutos[4].previdencia[0].divCardHeader</arg>
+<kw name="Read Locators From Json" library="locators">
+<var>${result}</var>
+<arg>${JsonPath}</arg>
+<msg timestamp="20211019 09:41:46.020" level="INFO">${result} = //div[@class='card-header d-flex P']</msg>
+<status status="PASS" starttime="20211019 09:41:46.019" endtime="20211019 09:41:46.020"/>
+</kw>
+<msg timestamp="20211019 09:41:46.021" level="INFO">${DivCardHeaderRE} = //div[@class='card-header d-flex P']</msg>
+<status status="PASS" starttime="20211019 09:41:46.019" endtime="20211019 09:41:46.021"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${DivCardHeaderRE}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211019 09:41:46.021" endtime="20211019 09:41:53.543"/>
+</kw>
+<kw name="Get Current Date" library="DateTime">
+<var>${data}</var>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<msg timestamp="20211019 09:41:53.543" level="INFO">${data} = 2021-10-19 09:41:53.543</msg>
+<status status="PASS" starttime="20211019 09:41:53.543" endtime="20211019 09:41:53.543"/>
+</kw>
+<kw name="Format Data For Screenshot" library="externalkeywords">
+<var>${data}</var>
+<arg>${data}</arg>
+<msg timestamp="20211019 09:41:53.543" level="INFO">${data} = 2021-10-19_09_41_53.543</msg>
+<status status="PASS" starttime="20211019 09:41:53.543" endtime="20211019 09:41:53.543"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>${FolderPath}//printRobot_01_${data}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211019 09:41:53.736" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../Users/T02285/Pictures/Evid%C3%AAncias%20automa%C3%A7%C3%A3o/Previdencia/CT-149/printRobot_01_2021-10-19_09_41_53.543.png"&gt;&lt;img src="../../Users/T02285/Pictures/Evid%C3%AAncias%20automa%C3%A7%C3%A3o/Previdencia/CT-149/printRobot_01_2021-10-19_09_41_53.543.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211019 09:41:53.543" endtime="20211019 09:41:53.736"/>
+</kw>
+<msg timestamp="20211019 09:41:53.736" level="INFO">${CTID} = CT-149</msg>
+<status status="PASS" starttime="20211019 09:41:46.017" endtime="20211019 09:41:53.737"/>
+</kw>
+<kw name="E clico no botao VER MAIS do produto Previdencia" library="resourcePrevidencia">
+<var>${CTID}</var>
+<arg>${CTID}</arg>
+<doc>Palavra chave utilizada em mais de um caso de teste</doc>
+<kw name="Read Element Locator" library="resourceGeneral">
+<var>${BotaoVerMais}</var>
+<arg>paginas[0].homeLogado[0].meusProdutos[4].previdencia[1].botaoVerMais</arg>
+<kw name="Read Locators From Json" library="locators">
+<var>${result}</var>
+<arg>${JsonPath}</arg>
+<msg timestamp="20211019 09:41:53.739" level="INFO">${result} = //div[@class='card-header d-flex P']/a[1]</msg>
+<status status="PASS" starttime="20211019 09:41:53.738" endtime="20211019 09:41:53.739"/>
+</kw>
+<msg timestamp="20211019 09:41:53.740" level="INFO">${BotaoVerMais} = //div[@class='card-header d-flex P']/a[1]</msg>
+<status status="PASS" starttime="20211019 09:41:53.737" endtime="20211019 09:41:53.740"/>
+</kw>
+<kw name="Read Element Locator" library="resourceGeneral">
+<var>${TituloPrevidencia}</var>
+<arg>paginas[0].paginaDoSegmento[0].previdencia[0].tituloPrevidencia</arg>
+<kw name="Read Locators From Json" library="locators">
+<var>${result}</var>
+<arg>${JsonPath}</arg>
+<msg timestamp="20211019 09:41:53.741" level="INFO">${result} = //h1[text()='Previdência']</msg>
+<status status="PASS" starttime="20211019 09:41:53.740" endtime="20211019 09:41:53.741"/>
+</kw>
+<msg timestamp="20211019 09:41:53.742" level="INFO">${TituloPrevidencia} = //h1[text()='Previdência']</msg>
+<status status="PASS" starttime="20211019 09:41:53.740" endtime="20211019 09:41:53.742"/>
+</kw>
+<kw name="Return Folder Path" library="folders">
+<var>${FolderPath}</var>
+<arg>Previdencia</arg>
+<arg>${CTID}</arg>
+<msg timestamp="20211019 09:41:53.742" level="INFO">${FolderPath} = C:/Users/T02285/Pictures/Evidências automação//Previdencia//CT-149</msg>
+<status status="PASS" starttime="20211019 09:41:53.742" endtime="20211019 09:41:53.742"/>
+</kw>
+<kw name="Get Current Date" library="DateTime">
+<var>${data}</var>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<msg timestamp="20211019 09:41:53.743" level="INFO">${data} = 2021-10-19 09:41:53.743</msg>
+<status status="PASS" starttime="20211019 09:41:53.742" endtime="20211019 09:41:53.743"/>
+</kw>
+<kw name="Format Data For Screenshot" library="externalkeywords">
+<var>${data}</var>
+<arg>${data}</arg>
+<msg timestamp="20211019 09:41:53.743" level="INFO">${data} = 2021-10-19_09_41_53.743</msg>
+<status status="PASS" starttime="20211019 09:41:53.743" endtime="20211019 09:41:53.743"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BotaoVerMais}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211019 09:41:53.743" level="INFO">Clicking element '//div[@class='card-header d-flex P']/a[1]'.</msg>
+<status status="PASS" starttime="20211019 09:41:53.743" endtime="20211019 09:41:53.854"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${TituloPrevidencia}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211019 09:41:53.854" endtime="20211019 09:41:54.607"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>${FolderPath}//printRobot_02_${data}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211019 09:41:54.793" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../Users/T02285/Pictures/Evid%C3%AAncias%20automa%C3%A7%C3%A3o/Previdencia/CT-149/printRobot_02_2021-10-19_09_41_53.743.png"&gt;&lt;img src="../../Users/T02285/Pictures/Evid%C3%AAncias%20automa%C3%A7%C3%A3o/Previdencia/CT-149/printRobot_02_2021-10-19_09_41_53.743.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211019 09:41:54.607" endtime="20211019 09:41:54.793"/>
+</kw>
+<msg timestamp="20211019 09:41:54.793" level="INFO">${CTID} = CT-149</msg>
+<status status="PASS" starttime="20211019 09:41:53.737" endtime="20211019 09:41:54.793"/>
+</kw>
+<kw name="Quando clico no botão ocultar dados" library="resourcePrevidencia">
+<var>${CTID}</var>
+<arg>${CTID}</arg>
+<kw name="Return Folder Path" library="folders">
+<var>${FolderPath}</var>
+<arg>Previdencia</arg>
+<arg>${CTID}</arg>
+<msg timestamp="20211019 09:41:54.795" level="INFO">${FolderPath} = C:/Users/T02285/Pictures/Evidências automação//Previdencia//CT-149</msg>
+<status status="PASS" starttime="20211019 09:41:54.794" endtime="20211019 09:41:54.795"/>
+</kw>
+<kw name="Get Current Date" library="DateTime">
+<var>${data}</var>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<msg timestamp="20211019 09:41:54.795" level="INFO">${data} = 2021-10-19 09:41:54.795</msg>
+<status status="PASS" starttime="20211019 09:41:54.795" endtime="20211019 09:41:54.795"/>
+</kw>
+<kw name="Format Data For Screenshot" library="externalkeywords">
+<var>${data}</var>
+<arg>${data}</arg>
+<msg timestamp="20211019 09:41:54.795" level="INFO">${data} = 2021-10-19_09_41_54.795</msg>
+<status status="PASS" starttime="20211019 09:41:54.795" endtime="20211019 09:41:54.795"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//i[@class='hide-button fal my-auto d-flex justify-content-center align-items-center fa-eye-slash']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211019 09:41:54.795" endtime="20211019 09:41:57.073"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>${FolderPath}//printRobot_03_${data}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211019 09:41:57.189" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../Users/T02285/Pictures/Evid%C3%AAncias%20automa%C3%A7%C3%A3o/Previdencia/CT-149/printRobot_03_2021-10-19_09_41_54.795.png"&gt;&lt;img src="../../Users/T02285/Pictures/Evid%C3%AAncias%20automa%C3%A7%C3%A3o/Previdencia/CT-149/printRobot_03_2021-10-19_09_41_54.795.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211019 09:41:57.073" endtime="20211019 09:41:57.189"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//i[@class='hide-button fal my-auto d-flex justify-content-center align-items-center fa-eye-slash']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211019 09:41:57.189" level="INFO">Clicking element '//i[@class='hide-button fal my-auto d-flex justify-content-center align-items-center fa-eye-slash']'.</msg>
+<status status="PASS" starttime="20211019 09:41:57.189" endtime="20211019 09:41:57.275"/>
+</kw>
+<msg timestamp="20211019 09:41:57.275" level="INFO">${CTID} = CT-149</msg>
+<status status="PASS" starttime="20211019 09:41:54.794" endtime="20211019 09:41:57.275"/>
+</kw>
+<kw name="Entao o site oculta os valores da composicao da reserva" library="resourcePrevidencia">
+<arg>${CTID}</arg>
+<kw name="Return Folder Path" library="folders">
+<var>${FolderPath}</var>
+<arg>Previdencia</arg>
+<arg>${CTID}</arg>
+<msg timestamp="20211019 09:41:57.277" level="INFO">${FolderPath} = C:/Users/T02285/Pictures/Evidências automação//Previdencia//CT-149</msg>
+<status status="PASS" starttime="20211019 09:41:57.276" endtime="20211019 09:41:57.277"/>
+</kw>
+<kw name="Get Current Date" library="DateTime">
+<var>${data}</var>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<msg timestamp="20211019 09:41:57.277" level="INFO">${data} = 2021-10-19 09:41:57.277</msg>
+<status status="PASS" starttime="20211019 09:41:57.277" endtime="20211019 09:41:57.277"/>
+</kw>
+<kw name="Format Data For Screenshot" library="externalkeywords">
+<var>${data}</var>
+<arg>${data}</arg>
+<msg timestamp="20211019 09:41:57.277" level="INFO">${data} = 2021-10-19_09_41_57.277</msg>
+<status status="PASS" starttime="20211019 09:41:57.277" endtime="20211019 09:41:57.277"/>
+</kw>
+<kw name="wait until element">
+<arg>//i[@class='hide-button fal my-auto d-flex justify-content-center align-items-center fa-eye']</arg>
+<msg timestamp="20211019 09:41:57.281" level="FAIL">No keyword with name 'wait until element' found.</msg>
+<status status="FAIL" starttime="20211019 09:41:57.281" endtime="20211019 09:41:57.281"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>${FolderPath}//printRobot_04_${data}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" starttime="20211019 09:41:57.281" endtime="20211019 09:41:57.282"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//i[@class='hide-button fal my-auto d-flex justify-content-center align-items-center fa-eye']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" starttime="20211019 09:41:57.282" endtime="20211019 09:41:57.282"/>
+</kw>
+<status status="FAIL" starttime="20211019 09:41:57.276" endtime="20211019 09:41:57.282"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211019 09:41:57.285" endtime="20211019 09:41:59.541"/>
+</kw>
+<tag>CT149</tag>
+<tag>RegressivoFull</tag>
+<tag>RegressivoPrev</tag>
+<tag>Smoke</tag>
+<tag>SmokePrev</tag>
+<status status="FAIL" starttime="20211019 09:41:11.636" endtime="20211019 09:41:59.543">No keyword with name 'wait until element' found.</status>
+</test>
+<status status="FAIL" starttime="20211019 09:41:11.026" endtime="20211019 09:41:59.546"/>
+</suite>
+<status status="FAIL" starttime="20211019 09:41:11.023" endtime="20211019 09:41:59.548"/>
+</suite>
+<status status="FAIL" starttime="20211019 09:41:11.000" endtime="20211019 09:41:59.550"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">CT149</stat>
+<stat pass="0" fail="1" skip="0">RegressivoFull</stat>
+<stat pass="0" fail="1" skip="0">RegressivoPrev</stat>
+<stat pass="0" fail="1" skip="0">Smoke</stat>
+<stat pass="0" fail="1" skip="0">SmokePrev</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TestCases">TestCases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Previdencia">TestCases.Previdencia</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Previdencia">TestCases.Previdencia.Previdencia</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

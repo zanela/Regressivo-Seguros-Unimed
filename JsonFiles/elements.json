@@ -1,0 +1,1098 @@
+{
+  "paginas": [
+    {
+      "homeNaoLogado": [
+        {
+          "linkClientePessoaFisica": "//nav/a[1]"
+        }
+      ],
+      "loginCliente": [
+        {
+          "campoDeTextoSeuCPF": "loginInput"
+        },
+        {
+          "campoDeTextoSuaSenha": "senhaInput"
+        },
+        {
+          "botaoEntrar":  "//button[@type='submit']"
+        }
+      ],
+      "homeLogado": [
+        {
+          "menuAcessoRapido": [
+            {
+              "2ViaDeBoleto": "//div[text()=' 2ª Via de Boleto ']"
+            },
+            {
+              "informeDeRendimentos": "//div[text()=' Informe de Rendimentos ']"
+            },
+            {
+              "descontosEmMedicamentos": "//div[text()=' Descontos em Medicamentos ']"
+            },
+            {
+              "clubeDeVantagens": "//div[text()=' Clube de Vantagens ']"
+            },
+            {
+              "guiaMedicoEOdontologico": "//button/div/div[text()=' Guia Médico e Odontológico ']"
+            },
+            {
+              "ouvidoria": "//div[text()=' Ouvidoria ']"
+            },
+            {
+              "simuladorDePrevidencia": "//div[text()=' Simulador de Previdência ']"
+            },
+            {
+              "dadosCadastraisEDesbloqueioDeCartao": "//div[text()=' Dados Cadastrais e Desbloq. de Cartão ']"
+            },
+            {
+              "reembolsoEPrevias": "//div[text()=' Reembolsos e Prévias ']"
+            },
+            {
+              "informeDeQuitacoes": "//div[text()=' Informe de Quitações ']"
+            }
+          ],
+          "meusProdutos": [
+            {
+              "odonto": [
+                {
+                  "divCardHeader": "//div[@class='card-header d-flex O']"
+                },
+                {
+                  "botaoVerMais": "//div[@class='card-header d-flex O']/a[1]"
+                },
+                {
+                  "nomeDoPlano": "//div[@class='card-body pb-0 p-0 O']/a[1]/div[1]/div[1]/p[1]"
+                },
+                {
+                  "divPlanoECartao": "//div[@class='card-body pb-0 p-0 O']/a[1]/div[1]"
+                }
+              ]
+            },
+            {
+              "saude": [
+                {
+                  "divCardHeader": "//div[@class='card-header d-flex S']"
+                },
+                {
+                  "botaoVerMais": "//div[@class='card-header d-flex S']/a[1]"
+                },
+                {
+                  "nomeDoPlano": "//div[@class='card-body pb-0 p-0 S']/a[1]/div[1]/div[1]/p[1]"
+                },
+                {
+                  "divPlanoECartao": "//div[@class='card-body pb-0 p-0 S']/a[1]/div[1]"
+                },
+                {
+                  "divCartao": "//div[@class='card-body pb-0 p-0 S']/a[1]/div[1]/div[1]/p[2]"
+                }
+              ]
+            },
+            {
+              "vida": [
+                {
+                  "divCardHeader": "//div[@class='card-header d-flex V']"
+                },
+                {
+                  "botaoVerMais": "//div[@class='card-header d-flex V']/a[1]"
+                },
+                {
+                  "nomeDoPlano": "//div[@class='card-body pb-0 p-0 V']/a[1]/div[1]/div[1]/p[1]"
+                },
+                {
+                  "divPlanoECartao": "//div[@class='card-body pb-0 p-0 V']/a[1]/div[1]"
+                },
+                {
+                  "divApolice": "//div[@class='card-body pb-0 p-0 V']/a[1]/div[1]/div[1]/p[2]"
+                }
+              ]
+            },
+            {
+              "re": [
+                {
+                  "divCardHeader": "//div[@class='card-header d-flex R']"
+                },
+                {
+                  "botaoVerMais": "//div[@class='card-header d-flex R']/a[1]"
+                },
+                {
+                  "nomeDoPlano": "//div[@class='card-body pb-0 p-0 R']/a[1]/div[1]/div[1]/p[1]"
+                },
+                {
+                  "divPlanoEApolice": "//div[@class='card-body pb-0 p-0 R']/a[1]/div[1]"
+                },
+                {
+                  "divApolice": "//div[@class='card-body pb-0 p-0 R']/a[1]/div[1]/div[1]/p[2]"
+                }
+              ]
+            },
+            {
+              "previdencia": [
+                {
+                  "divCardHeader": "//div[@class='card-header d-flex P']"
+                },
+                {
+                  "botaoVerMais": "//div[@class='card-header d-flex P']/a[1]"
+                },
+                {
+                  "textoVerPropostas": "//p[text()='Ver propostas']"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "paginaDoSegmento": [
+        {
+          "odonto": [
+            {
+              "tituloOdonto": "//h1[text()='Odonto']"
+            },
+            {
+              "meusPlanos": [
+                {
+                  "linkProduto": "//tbody/tr[1]/td[2]/a"
+                }
+              ]
+            },
+            {
+              "detalhesDoPlano": [
+                {
+                  "divUtilizacaoECoparticipacao": "//div[text()=' Utilização e coparticipação ']"
+                },
+                {
+                  "divCartaoDigital": "//div[text()=' Cartão digital ']"
+                },
+                {
+                  "botaoManualDoBeneficiario": "//button[@class='doc-button w-100 d-flex align-items-center rounded border py-1 mb-lg-0']"
+                },
+                {
+                  "divSolicitarCancelamento": "//div[text()='Solicitar cancelamento']"
+                },
+                {
+                  "divImprimir": "//div[text()='Imprimir']"
+                }
+              ]
+            },
+            {
+              "2ViaDeBoleto": [
+                {
+                  "span2ViaDeBoleto": "//span[text()=' 2ª Via de Boleto ']"
+                }
+              ]
+            },
+            {
+              "historicoDePagamentos": [
+                {
+                  "tituloHistoricoDePagamentos": "//h1[text()='Histórico de Pagamentos']"
+                },
+                {
+                  "selectProduto": "productSelect"
+                },
+                {
+                  "botaoAtualizarBusca": "//button[text()='Atualizar busca']"
+                },
+                {
+                  "divTextoPadraoAntesDaBusca": "//div[text()='Após realizar uma busca, você poderá visualizar os resultados aqui.']"
+                }
+              ]
+            },
+            {
+              "solicitarCancelamento": [
+                {
+                  "botaoAvancar": "//button[text()=' Avançar ']"
+                },
+                {
+                  "textoCancelamento": "//p[text()='O cancelamento ocorrerá para todos os beneficiários abaixo:']"
+                },
+                {
+                  "divTermoDeConsentimento": "contentToPdf"
+                },
+                {
+                  "ultimaFraseDoTermo": "//span[text()='No nosso site institucional no acesso do Portal do Cliente - ']"
+                },
+                {
+                  "divLiEAceitoOsTermos": "//div[text()='Li e aceito os termos do cancelamento.']"
+                },
+                {
+                  "dadosDoSeguradoTitular": [
+                    {
+                      "inputNomeCivil": "civilNameInput"
+                    },
+                    {
+                      "inputEmail": "emailInput"
+                    }
+                  ]
+                },
+                {
+                  "endereco": [
+                    {
+                      "inputCEP": "zipInput"
+                    },
+                    {
+                      "inputLogradouro": "publicPlaceInput"
+                    },
+                    {
+                      "inputNumero": "numberInput"
+                    },
+                    {
+                      "inputBairro": "neighborhoodInput"
+                    },
+                    {
+                      "selectEstado": "stateSelect"
+                    },
+                    {
+                      "selectCidade": "citySelect"
+                    },
+                    {
+                      "textoCEPInvalido": "//p[text()=' CEP inválido ']"
+                    }
+                  ]
+                },
+                {
+                  "telefone": [
+                    {
+                      "inputTelefone": "phoneInput"
+                    },
+                    {
+                      "selectTipoTelefone": "phoneTypeSelect"
+                    }
+                  ]
+                },
+                {
+                  "dadosBancarios": [
+                    {
+                      "inputCPFTitular": "cpfAccountInput"
+                    },
+                    {
+                      "inputNomeDoTitular": "nameAccountInput"
+                    },
+                    {
+                      "selectTipoDePagamento": "typePaymentSelect"
+                    },
+                    {
+                      "botaoBanco": "//button[@class='input-group no-disabled p-0 position-relative']"
+                    },
+                    {
+                      "inputAgenciaSemDigito": "agencyInputInput"
+                    },
+                    {
+                      "inputConta": "//input[@type='tel' and @id='accountInputInput']"
+                    },
+                    {
+                      "inputDigito": "//input[@type='text' and @id='accountInputInput']"
+                    },
+                    {
+                      "botaoEnviarRequerimento": "//button[text()=' Enviar requerimento ']"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "saude": [
+            {
+              "tituloSaude": "//h1[text()='Saúde']"
+            },
+            {
+              "meusPlanos": [
+                {
+                  "linkProduto": "//tbody/tr[1]/td[2]/a"
+                }
+              ]
+            },
+            {
+              "detalhesDoPlano": [
+                {
+                  "divUtilizacaoECoparticipacao": "//div[text()=' Utilização e coparticipação ']"
+                },
+                {
+                  "divCartaoDigital": "//div[text()=' Cartão digital ']"
+                },
+                {
+                  "divBeneficios": "//div[text()=' Benefícios ']"
+                },
+                {
+                  "botaoManualDoBeneficiario": "//button[@class='doc-button w-100 d-flex align-items-center rounded border py-1 mb-lg-0']"
+                },
+                {
+                  "divSolicitarCancelamento": "//div[text()='Solicitar cancelamento']"
+                },
+                {
+                  "divImprimir": "//div[text()='Imprimir']"
+                }
+              ]
+            },
+            {
+              "reembolsosEPrevias": [
+                {
+                  "tituloReembolsosEPrevias": "//h1[text()='Reembolsos e Prévias']"
+                },
+                {
+                  "linkReembolso": "//a[text()=' Reembolso ']"
+                },
+                {
+                  "linkPrevia": "//a[text()=' Prévia ']"
+                },
+                {
+                  "linkRelatorios": "//a[text()=' Relatórios ']"
+                },
+                {
+                  "reembolso": [
+                    {
+                      "linkNovaSolicitacaoDeReembolso": "//a[text()='Nova solicitação de reembolso']"
+                    },
+                    {
+                      "botaoTabelas": "//button[text()='Tabelas']"
+                    }
+                  ]
+                },
+                {
+                  "previa": [
+                    {
+                      "linkNovaPreviaDeConsultaMedica": "//a[text()='Nova prévia de consulta médica']"
+                    },
+                    {
+                      "linkNovaPreviaDeOutrosProcedimentos": "//a[text()='Nova prévia de outros procedimentos']"
+                    },
+                    {
+                      "divTextoPadrao": "//div[text()='Após realizar uma ou mais solicitações, você poderá acompanhá-las por aqui.']"
+                    },
+                    {
+                      "dadosDoProcedimento": [
+                        {
+                          "botaoPaciente": "//button[@class='input-group no-disabled p-0 position-relative']"
+                        },
+                        {
+                          "campoDataPrevistaDaConsulta": "inputDateInput"
+                        },
+                        {
+                          "botaoCalcularPrevia": "//button[text()=' Calcular prévia ']"
+                        },
+                        {
+                          "selectTipoDeProcedimento": "selectProcedureTypeSelect"
+                        },
+                        {
+                          "campoValorDoProcedimento": "nameCurrencyInput"
+                        },
+                        {
+                          "botaoAnexarOrcamento": "//div[@class='mt-4 pt-2']/div[1]/lib-upload-field/div/div/div[2]/button"
+                        },
+                        {
+                          "botaoAnexarPedidoMedico": "//div[@class='mt-4 pt-2']/div[2]/lib-upload-field/div/div/div[2]/button"
+                        },
+                        {
+                          "botaoSolicitarPrevia": "//button[text()=' Solicitar prévia ']"
+                        }
+                      ]
+                    },
+                    {
+                      "paginaResultadoDoCalculo": [
+                        {
+                          "linkImprimir": "//a[@class='generic-button d-flex rounded border py-1']"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "relatorios": [
+                    {
+                      "demonstrativoDeReembolso": [
+                        {
+                          "botaoBeneficiario": "//button[@class='input-group no-disabled p-0 position-relative']"
+                        },
+                        {
+                          "selectPeriodo": "periodSelect"
+                        },
+                        {
+                          "botaoGerarRelatorio": "//button[text()='Gerar relatório']"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "2ViaDeBoleto": [
+                {
+                  "span2ViaDeBoleto": "//span[text()=' 2ª Via de Boleto ']"
+                }
+              ]
+            },
+            {
+              "historicoDePagamentos": [
+                {
+                  "tituloHistoricoDePagamentos": "//h1[text()='Histórico de Pagamentos']"
+                },
+                {
+                  "selectProduto": "productSelect"
+                },
+                {
+                  "botaoAtualizarBusca": "//button[text()='Atualizar busca']"
+                },
+                {
+                  "divTextoPadraoAntesDaBusca": "//div[text()='Após realizar uma busca, você poderá visualizar os resultados aqui.']"
+                }
+              ]
+            },
+            {
+              "solicitarCancelamento": [
+                {
+                  "botaoAvancar": "//button[text()=' Avançar ']"
+                },
+                {
+                  "textoCancelamento": "//div[text()='O pedido de cancelamento será da totalidade do Grupo Familiar (Titular/Dependentes e Agregados).']"
+                },
+                {
+                  "divTermoDeConsentimento": "contentToPdf"
+                },
+                {
+                  "ultimaFraseDoTermo": "//span[text()='Em nossa Central de Relacionamento por meio do      telefone 0800 016 66 33.']"
+                },
+                {
+                  "divLiEAceitoOsTermos": "//div[text()='Li e aceito os termos do cancelamento.']"
+                },
+                {
+                  "dadosDoSeguradoTitular": [
+                    {
+                      "inputNomeCivil": "civilNameInput"
+                    },
+                    {
+                      "inputEmail": "emailInput"
+                    }
+                  ]
+                },
+                {
+                  "endereco": [
+                    {
+                      "inputCEP": "zipInput"
+                    },
+                    {
+                      "inputLogradouro": "publicPlaceInput"
+                    },
+                    {
+                      "inputNumero": "numberInput"
+                    },
+                    {
+                      "inputBairro": "neighborhoodInput"
+                    },
+                    {
+                      "selectEstado": "stateSelect"
+                    },
+                    {
+                      "selectCidade": "citySelect"
+                    },
+                    {
+                      "textoCEPInvalido": "//p[text()=' CEP inválido ']"
+                    }
+                  ]
+                },
+                {
+                  "telefone": [
+                    {
+                      "inputTelefone": "phoneInput"
+                    },
+                    {
+                      "selectTipoTelefone": "phoneTypeSelect"
+                    }
+                  ]
+                },
+                {
+                  "dadosBancarios": [
+                    {
+                      "inputCPFTitular": "cpfAccountInput"
+                    },
+                    {
+                      "inputNomeDoTitular": "nameAccountInput"
+                    },
+                    {
+                      "selectTipoDePagamento": "typePaymentSelect"
+                    },
+                    {
+                      "botaoBanco": "//button[@class='input-group no-disabled p-0 position-relative']"
+                    },
+                    {
+                      "inputAgenciaSemDigito": "agencyInputInput"
+                    },
+                    {
+                      "inputConta": "//input[@type='tel' and @id='accountInputInput']"
+                    },
+                    {
+                      "inputDigito": "//input[@type='text' and @id='accountInputInput']"
+                    },
+                    {
+                      "botaoEnviarRequerimento": "//button[text()=' Enviar requerimento ']"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "vida": [
+            {
+              "2ViaDeBoleto": [
+                {
+                  "span2ViaDeBoleto": "//span[text()=' 2ª Via de Boleto ']"
+                }
+              ]
+            },
+            {
+              "tituloVida": "//h1[text()='Vida']"
+            },
+            {
+              "minhasApolices": [
+                "//h2[text()='Minhas apólices']",
+                {
+                  "linkProduto": "//tbody/tr[1]/td[2]/a"
+                }
+              ]
+            },
+            {
+              "detalhesDoPlano": [
+                {
+                  "divCertificado": "//div[text()=' Certificado ']"
+                }
+              ]
+            },
+            {
+              "historicoDePagamentos": [
+                {
+                  "tituloHistoricoDePagamentos": "//h1[text()='Histórico de Pagamentos']"
+                },
+                {
+                  "selectProduto": "productSelect"
+                },
+                {
+                  "botaoAtualizarBusca": "//button[text()='Atualizar busca']"
+                },
+                {
+                  "divTextoPadraoAntesDaBusca": "//div[text()='Após realizar uma busca, você poderá visualizar os resultados aqui.']"
+                }
+              ]
+            }
+          ],
+          "re": [
+            {
+              "tituloRe": "//h1[text()='Ramos Elementares']"
+            },
+            {
+              "2ViaDeBoleto": [
+                {
+                  "span2ViaDeBoleto": "//span[text()=' 2ª Via de Boleto ']"
+                }
+              ]
+            },
+            {
+              "detalhesDoPlano": [
+                {
+                  "divCertificado": "//div[text()=' Certificado ']"
+                },
+                {
+                  "divApolice": "//div[text()=' Apólice ']"
+                }
+              ]
+            },
+            {
+              "historicoDePagamentos": [
+                {
+                  "tituloHistoricoDePagamentos": "//h1[text()='Histórico de Pagamentos']"
+                },
+                {
+                  "selectProduto": "productSelect"
+                },
+                {
+                  "botaoAtualizarBusca": "//button[text()='Atualizar busca']"
+                },
+                {
+                  "divTextoPadraoAntesDaBusca": "//div[text()='Após realizar uma busca, você poderá visualizar os resultados aqui.']"
+                }
+              ]
+            },
+            {
+              "minhasApolices": [
+                "//h2[text()='Minhas apólices']",
+                {
+                  "linkProduto": "//tbody/tr[1]/td[2]/a"
+                },
+                {
+                  "numeroApolice": "//tbody/tr[1]/td[3]"
+                }
+              ]
+            }
+          ],
+          "previdencia": [
+            {
+              "tituloPrevidencia": "//h1[text()='Previdência']"
+            },
+            {
+              "2ViaDeBoleto": [
+                {
+                  "span2ViaDeBoleto": "//span[text()=' 2ª Via de Boleto ']"
+                }
+              ]
+            },
+            {
+              "subtituloPropostas": "//h2[text()='Propostas']"
+            },
+            {
+              "historicoDePagamentos": [
+                {
+                  "tituloHistoricoDePagamentos": "//h1[text()='Histórico de Pagamentos']"
+                },
+                {
+                  "selectProduto": "productSelect"
+                },
+                {
+                  "botaoAtualizarBusca": "//button[text()='Atualizar busca']"
+                },
+                {
+                  "divTextoPadraoAntesDaBusca": "//div[text()='Após realizar uma busca, você poderá visualizar os resultados aqui.']"
+                }
+              ]
+            }
+          ],
+          "menu": [
+            {
+              "financeiro": [
+                "//div[text()=' Financeiro']",
+                {
+                  "linkHistoricoDePagamentos": "//a[text()='Histórico de pagamentos']"
+                },
+                {
+                  "botao2ViaDeBoleto": "//button[text()=' 2ª via de boleto ']"
+                },
+                {
+                  "botaoInformeDeRendimentos": "//button[text()=' Informe de rendimentos ']"
+                },
+                {
+                  "linkReembolsosEPrevias": "//a[text()='Reembolsos e prévias']"
+                },
+                {
+                  "botaoInformeDeQuitacoes": "//button[text()=' Informe de quitações ']"
+                },
+                {
+                  "linkSimulador": "//a[text()='Simulador']"
+                }
+              ],
+              "relatorios": [
+                "//div[text()=' Relatórios']",
+                {
+                  "utilizacaoECoparticipacao": "//button[text()=' Utilização e coparticipação ']"
+                }
+              ],
+              "informacoes": [
+                "//div[text()=' Informações']",
+                {
+                  "redeCredenciada": [
+                    {
+                      "linkRedeCredenciada": "//a[text()='Rede credenciada']"
+                    }
+                  ]
+                },
+                {
+                  "descontosEmMedicamentos": [
+                    {
+                      "linkDescontosEmMedicamentos": "//a[text()='Descontos em medicamentos']"
+
+                    }
+                  ]
+                },
+                {
+                  "botaoGuiaMedico": "//button[text()=' Guia médico ']"
+                },
+                {
+                  "linkPerguntasFrequentes": "//a[text()='Perguntas frequentes (FAQ)']"
+                }
+              ]
+            },
+            {
+              "sinistro": [
+                "//div[text()=' Sinistro']",
+                {
+                  "notificacaoDeSinistro": "//a[text()='Notificação de Sinistro']"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "modais": [
+        {
+          "modalAviso": "//h4[text()='Aviso']"
+        },
+        {
+          "modalErroInterno": "//div[text()=' Não foi possível processar sua requisição no momento. ']"
+        },
+        {
+          "modalUtilizacaoECoparticipacao": [
+            {
+              "selectProduto": "//div[@class='modal-body p-4']/form/lib-select-field[@id='product']/div[@class='form-group']/select[@id='productSelect']"
+            },
+            {
+              "intervalo": [
+                {
+                  "radioPorPeriodo": "dateRadio"
+                },
+                {
+                  "radioPorSemestre": "semesterRadio"
+                }
+              ]
+            },
+            {
+              "campoDataInicial": "startDateInput"
+            },
+            {
+              "campoDataFinal": "endDateInput"
+            },
+            {
+              "selectSemestre": "semesterSelect"
+            },
+            {
+              "botaoGerarRelatorio": "//button[text()=' Gerar relatório ']"
+            }
+          ]
+        },
+        {
+          "modalSelecionarProduto": [
+            {
+              "selectSegmento": "segmentSelect"
+            },
+            {
+              "selectProduto": "productSelect"
+            },
+            {
+              "botaoConfirmar": "//button[text()='Confirmar']"
+            },
+            {
+              "selectProdutoExcecao": "//select[@class='form-control ng-pristine ng-invalid ng-touched' and @id='productSelect']"
+            },
+            {
+              "textoCampoObrigatorio": "//p[text()=' Campo obrigatório ']"
+            }
+          ]
+        },
+        {
+          "modalInformeDeRendimentos": [
+            {
+              "selectSegmento": "rendimentosSegmentSelect"
+            },
+            {
+              "selectProduto": "rendimentosProductSelect"
+            },
+            {
+              "botaoGerarInforme": "//button[text()='Gerar informe']"
+            },
+            {
+              "selectAnoBase": "//select[@id='rendimentosBaseYearSelect']"
+            }
+          ]
+        },
+        {
+          "modalClubeDeVantagens": [
+            {
+              "botaoAcessarClubeDeVantagens": "//button[text()=' Acessar Clube de Vantagens ']"
+            }
+          ]
+        },
+        {
+          "modalManualDoBeneficiario": [
+            {
+              "divBaixeSeuManualDoBeneficiárioEmPDF": "//div[text()='Baixe seu Manual do Beneficiário em PDF']"
+            }
+          ]
+        },
+        {
+          "modalSelecioneUmBanco": [
+            {
+              "tituloSelecioneUmBanco": "//h4[text()='Selecione um banco']"
+            },
+            {
+              "radiobuttonBancoDoBrasil": "//input[@id='001Radio']"
+            }
+          ]
+        },
+        {
+          "modalErroDeConexao": [
+            {
+              "divErroDeConexao": "//div[text()=' Não foi possível estabelecer uma comunicação. Tente novamente mais tarde. ']"
+            }
+          ]
+        },
+        {
+          "modalCartaoDigital": [
+            {
+              "tituloCartaoDigital": "//h4[text()='Cartão digital']"
+            },
+            {
+              "radiobuttonVerso": "backRadio"
+            },
+            {
+              "radiobuttonFrente": "frontRadio"
+            },
+            {
+              "botaoVoltar": "//button[text()='Voltar' and @class='btn btn-unimed-secondary border btn-block']"
+            },
+            {
+              "botaoOK": "//div[@class='col-6 pl-2']/button[text()='OK' and @class='btn btn-unimed-primary btn-block']"
+            },
+            {
+              "divUserInfo": "//div[@class='user-info']"
+            },
+            {
+              "divAssinatura": "//div[text()='Assinatura']"
+            },
+            {
+              "divFrenteDoCartao": "//div/lib-digital-card-odonto-front"
+            },
+            {
+              "imagemFrenteCartaoDigitalSaude": "//img[@alt='SEGUROS Unimed']"
+            },
+            {
+              "divBlackBarVersoCartaoDigitalSaude": "//div[@class='black-bar']"
+            }
+          ]
+        },
+        {
+          "modalSelecioneOPaciente": [
+            {
+              "tituloSelecioneOPaciente": "//h4[text()='Selecione o paciente']"
+            }
+          ]
+        },
+        {
+          "modalEnviarSolicitacao": [
+            {
+              "tituloEnviarSolicitacao": "//h4[text()='Enviar solicitação']"
+            },
+            {
+              "botaoEnviar": "//button[text()='Enviar']"
+            }
+          ]
+        },
+        {
+          "modalSelecioneOBeneficiario": [
+            {
+              "tituloSelecioneOBeneficiario": "//h4[text()='Selecione o beneficiário']"
+            }
+          ]
+        },
+        {
+          "modalErro": [
+            {
+              "tituloModalErro": "//h4[text()='Erro']"
+            },
+            {
+              "divTexto": "Não existe documento a ser gerado para os dados selecionados."
+            }
+          ]
+        },
+        {
+          "modalInformeDeQuitacoes": [
+            {
+              "tituloInformeDeQuitacoes": "//h4[text()='Informe de quitações']"
+            },
+            {
+              "selectSegmento": "quitacaoSegmentSelect"
+            },
+            {
+              "selectProduto": "quitacaoProductSelect"
+            },
+            {
+              "selectAnoBase": "quitacaoBaseYearSelect"
+            },
+            {
+              "tituloInformeDeQuitacao": "//h4[text()='Informe de quitação']"
+            }
+          ]
+        },
+        {
+          "modalBeneficiosDoPlano": [
+            {
+              "tituloBeneficiosDoPlano": "//div[@class='modal fade in show']/div[@class='modal-dialog']/div/div/div[@class='header-title']/h4[text()='Benefícios do plano']"
+            },
+            {
+              "botaoVerDetalhes": "//div[@class='modal fade in show']/div[@class='modal-dialog']/div[1]/div[2]/div[1]/div[2]/button"
+            }
+          ]
+        },
+        {
+          "modalDetalhesDoBeneficio": [
+            {
+              "tituloDetalhesDoBeneficio": "//h4[text()='Detalhes do benefício']"
+            },
+            {
+              "divMensagem": "Não foi possível baixar os detalhes do benefício. Tente novamente mais tarde."
+            }
+          ]
+        },
+        {
+          "modalDadosCadastraisEDesbloqueioDeCartao": [
+            {
+              "divProduto": "//div[@class='mr-n4 mt-3 mt-md-0']/a[1]/div[1]/div[1]"
+            }
+          ]
+        },
+        {
+          "modalOperacaoConcluida": [
+            {
+              "tituloOperacaoConcluida": "//h4[text()='Operação concluída']"
+            },
+            {
+              "divNumeroDoProtocolo": "//div[text()=' Seu protocolo para essa operação é: ']/div[1]"
+            }
+          ]
+        },
+        {
+          "modalEndereco": [
+            {
+              "campoCep": "zipInput"
+            },
+            {
+              "campoLogradouro": "publicPlaceInput"
+            },
+            {
+              "campoNumero": "numberInput"
+            },
+            {
+              "campoBairro": "neighborhoodInput"
+            },
+            {
+              "selectCidade": "citySelect"
+            },
+            {
+              "selectEstado": "stateSelect"
+            },
+            {
+              "botaoConfirmar": "//button[text()=' Confirmar ']"
+            }
+          ]
+        },
+        {
+          "modalApolice": [
+            {
+              "tituloApolice": "//h4[text()='Apólice']"
+            },
+            {
+              "libLoadingSpinner": "//div[@class='modal-dialog']/div/div[2]/lib-pdf-download/div[1]/lib-loading-spinner"
+            },
+            {
+              "divErro": "//div[text()=' Não foi possível processar sua requisição no momento. ']"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ouvidoria": [
+        {
+          "tituloOuvidoria": "//h1[text()='Ouvidoria']"
+        }
+      ]
+    },
+    {
+      "simuladorPrevidencia": [
+        {
+          "spanIniciarSimulacao": "//span[text()='Iniciar simulação']"
+        }
+      ]
+    },
+    {
+      "descontosEmMedicamentos": [
+        {
+          "tituloDescontosEmMedicamentos": "//h1[text()='Descontos em Medicamentos']"
+        }
+      ]
+    },
+    {
+      "guiaMedico": [
+        {
+          "tituloGuiaMedico": "//h1[text()='Guia Médico']"
+        }
+      ]
+    },
+    {
+      "faqSaude": [
+        {
+          "tituloPerguntasMaisProcuradasEmSaude": "//h2[text()='Perguntas mais procuradas em Saúde']"
+        }
+      ]
+    },
+    {
+      "dadosCadastrais": [
+        {
+          "tituloDadosCadastraisEDesbloqueioDeCartao": "//h1[text()='Dados Cadastrais e Desbloqueio de cartão']"
+        },
+        {
+          "subtituloDadosDoCartao": "//h2[text()='Dados do cartão']"
+        },
+        {
+          "campoNomeCompleto": "userNameInput"
+        },
+        {
+          "campoCpf": "userCpfInput"
+        },
+        {
+          "campoDataDeNascimento": "birthDateInput"
+        },
+        {
+          "selectSexo": "userGenderSelect"
+        },
+        {
+          "campoNomeDaMae": "motherNameInput"
+        },
+        {
+          "campoEnderecoResidencial": "addressInput"
+        },
+        {
+          "campoCns": "cnsInput"
+        },
+        {
+          "selectEstadoCivil": "maritalStatusSelect"
+        },
+        {
+          "campoDdiCelular": "mobileDDIInput"
+        },
+        {
+          "campoCelular": "mobilePhoneInput"
+        },
+        {
+          "campoEmail": "emailInput"
+        },
+        {
+          "botaoDesbloquearESalvarAlteracoes": "//button[text()='Desbloquear e salvar alterações']"
+        }
+      ]
+    },
+    {
+      "notificacaoDeSinistro": [
+        {
+          "tituloNotificacaoDeSinistro": "//h1[text()='Notificação de Sinistro']"
+        }
+      ]
+    },
+    {
+      "faqVida": [
+        {
+          "tituloPerguntasMaisProcuradasEmVida": "//h2[text()='Perguntas mais procuradas em Vida']"
+        }
+      ]
+    },
+    {
+      "faqRe": [
+        {
+          "tituloPerguntasMaisProcuradasEmRamosElementares": "//h2[text()='Perguntas mais procuradas em Ramos Elementares']"
+        }
+      ]
+    },
+    {
+      "faqPrevidencia": [
+        {
+          "tituloPerguntasMaisProcuradasEmPrevidencia": "//h2[text()='Perguntas mais procuradas em Previdência']"
+        }
+      ]
+    }
+  ]
+}
